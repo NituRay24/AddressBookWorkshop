@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300,400,500,500&display:swap&quot;
+    rel="stylesheet">
+    <link rel="stylesheet" href="../css/AddressBook.css">
+    <script defer src="../js/EmployeePayroll.js"></script>
+    <div class="form-head"><center><U><h1><b>Add Person AddressBook</b></h1></U></center></div><br>
+    </head>
+    <body>
+    <header class="header-content header">
+    <div class="logo-content">
+    <img src="../assets/images/logo.png" alt="logo">
+    <div>
+    <span class="Address"> ADDRESS</span><br>
+    <span class="Address ">BOOK</span>
+    </div>
+    </div>
+    </header>
+    <div class="form-content">
+    <form class="form" action="#" onAdd="save();return false" onreset="resetForm()">
+    <!-- 1 div for each element-->
+    <div class="form-head"><center><U>PERSON ADDRESS FORM</U></center></div><br><br>
+    <div class="row-content">
+    <label class="label text" for="name">Name </label>
+    <input class="input" type="text" id="name" name="name"
+    placeholder="Your name" required><br>
+    <error-output class="text-error" for="text"></error-output>
+    </div><br>
+</div>
+    <div class="row-content">
+    <label class="label text" for="Address">Address</label>
+    <input class="input" type="text" id="name" name="name"
+    placeholder="Your Address" required>
+    </div><br>
+    <div class="row-content">
+    <label class="label text" for="Select city">Select City</label>
+    <select id="Select city" name="Select city">
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Bangaluru">Bangaluru</option>    
+    </select>
+     <label class="label text" for="State">State</label>
+    <select id="State" name="State">  
+    <option value="Jammu&Kashmir">Jammu&Kashmir</option>
+    <option value="Karnataka">Karnataka</option>
+    </select>
+    <label class="label text" for="Zip">Zip</label>
+    <select id="Zip" name="Zip">
+    <option value="500082">500082</option>
+    <option value="500084">500084</option>
+    <option value="623162">623162</option>
+    <option value="678473">678473</option>  
+    </select>
+    </div>
+    </div><br>
+    <div class="buttonParent">
+    <button type="submit" class="button AddButton" id="AddButton">
+    Add</button>
+    <button type="reset" class="button resetButton"> Reset</button>
+    </div>    
+    </div>
+    </form>
+    </div>
+    </body>
+</html>
